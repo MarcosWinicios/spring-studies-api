@@ -1,14 +1,10 @@
 package com.studies.algafood.di.notification;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.studies.algafood.di.model.Client;
 
-import lombok.Setter;
-
-@Setter
-@Qualifier("normal")
+@NotifierType(LevelUrgency.NO_URGENCY)
 @Component
 public class NotifierEmail implements Notifier {
 
