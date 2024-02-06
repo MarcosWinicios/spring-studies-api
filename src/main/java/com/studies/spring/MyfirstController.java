@@ -1,5 +1,6 @@
 package com.studies.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -10,16 +11,8 @@ import com.studies.spring.di.service.ActivationClientService;
 @Controller
 public class MyfirstController {
 	
+	@Autowired
 	private ActivationClientService ativactionClientService;
-	
-	
-	
-	public MyfirstController(ActivationClientService ativactionClientService) {
-		this.ativactionClientService = ativactionClientService;
-		
-		System.out.println("Meu primeiro controller" + ativactionClientService);
-	}
-
 
 
 	@GetMapping("/hello")
