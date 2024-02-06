@@ -1,5 +1,6 @@
 package com.studies.algafood.di.notification;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -9,17 +10,14 @@ import com.studies.algafood.di.model.Client;
 @Component
 public class NotifierEmail implements Notifier {
 	
-	@Value("${notifier.email.host-server}")
-	private String host;
-	
-	@Value("${notifier.email.port-server}")
-	private Integer port;
+	@Autowired
+	private NotifierProperties properties;
 	
 	@Override
 	public void notify(Client client, String message) {
 		
-		System.out.println("Host: " + host);
-		System.out.println("Port: " + port);
+		System.out.println("Host: " + properties.getHostServer());
+		System.out.println("Port: " + properties.getPortServer());
 
 		System.out.printf("Notificando %s através do e-mail %s : %s\n", client.getName(), client.getEmail(), message);
 	}
