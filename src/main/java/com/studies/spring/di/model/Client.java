@@ -1,4 +1,4 @@
-package com.studies.algafood.di.model;
+package com.studies.spring.di.model;
 
 public class Client {
 	private String name;

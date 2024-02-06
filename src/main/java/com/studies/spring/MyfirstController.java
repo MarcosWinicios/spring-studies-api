@@ -1,11 +1,11 @@
-package com.studies.algafood;
+package com.studies.spring;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.studies.algafood.di.model.Client;
-import com.studies.algafood.di.service.ActivationClientService;
+import com.studies.spring.di.model.Client;
+import com.studies.spring.di.service.ActivationClientService;
 
 @Controller
 public class MyfirstController {

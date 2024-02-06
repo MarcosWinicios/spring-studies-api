@@ -1,9 +1,9 @@
-package com.studies.algafood.listener;
+package com.studies.spring.listener;
 
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-import com.studies.algafood.di.service.ClienteActivedEvent;
+import com.studies.spring.di.service.ClienteActivedEvent;
 
 @Component
 public class InssuanceTaxReceiptService {

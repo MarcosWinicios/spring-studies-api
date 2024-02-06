@@ -1,10 +1,10 @@
-package com.studies.algafood.di.notification;
+package com.studies.spring.di.notification;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.studies.algafood.di.model.Client;
+import com.studies.spring.di.model.Client;
 
 @NotifierType(LevelUrgency.NO_URGENCY)
 @Component

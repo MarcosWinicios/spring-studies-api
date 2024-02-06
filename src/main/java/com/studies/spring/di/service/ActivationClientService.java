@@ -1,10 +1,10 @@
-package com.studies.algafood.di.service;
+package com.studies.spring.di.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
-import com.studies.algafood.di.model.Client;
+import com.studies.spring.di.model.Client;
 
 @Component
 public class ActivationClientService {

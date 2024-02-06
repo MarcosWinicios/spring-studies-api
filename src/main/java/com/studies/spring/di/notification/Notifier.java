@@ -1,6 +1,6 @@
-package com.studies.algafood.di.notification;
+package com.studies.spring.di.notification;
 
-import com.studies.algafood.di.model.Client;
+import com.studies.spring.di.model.Client;
 
 public interface Notifier {
 	

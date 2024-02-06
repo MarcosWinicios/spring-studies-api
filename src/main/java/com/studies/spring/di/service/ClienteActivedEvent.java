@@ -1,6 +1,6 @@
-package com.studies.algafood.di.service;
+package com.studies.spring.di.service;
 
-import com.studies.algafood.di.model.Client;
+import com.studies.spring.di.model.Client;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

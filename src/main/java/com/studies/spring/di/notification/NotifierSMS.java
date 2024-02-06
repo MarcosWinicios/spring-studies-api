@@ -1,8 +1,8 @@
-package com.studies.algafood.di.notification;
+package com.studies.spring.di.notification;
 
 import org.springframework.stereotype.Component;
 
-import com.studies.algafood.di.model.Client;
+import com.studies.spring.di.model.Client;
 
 @NotifierType(LevelUrgency.URGENT)
 @Component

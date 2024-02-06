@@ -1,4 +1,4 @@
-package com.studies.algafood.di.notification;
+package com.studies.spring.di.notification;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
