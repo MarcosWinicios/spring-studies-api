@@ -15,7 +15,7 @@ public class ActivationClientService {
 	public void activate(Client client) {
 		client.activate();
 		
-		// dizer para o containser que o cliente está ativo neste momento
+		// dizer para o container que o cliente está ativo neste momento
 		
 		eventPublisher.publishEvent(new ClienteActivedEvent(client));
 	}
