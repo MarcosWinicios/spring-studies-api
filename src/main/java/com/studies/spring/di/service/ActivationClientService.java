@@ -17,7 +17,7 @@ public class ActivationClientService {
 		
 		// dizer para o container que o cliente está ativo neste momento
 		
-		eventPublisher.publishEvent(new ClienteActivedEvent(client));
+		eventPublisher.publishEvent(new ClientActivedEvent(client));
 	}
 
 }

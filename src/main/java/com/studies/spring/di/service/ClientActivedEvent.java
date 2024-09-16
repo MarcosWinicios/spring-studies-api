@@ -7,7 +7,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class ClienteActivedEvent {
+public class ClientActivedEvent {
 	
 	private Client client;
 	

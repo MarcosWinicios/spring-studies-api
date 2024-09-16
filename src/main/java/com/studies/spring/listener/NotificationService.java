@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import com.studies.spring.di.notification.LevelUrgency;
 import com.studies.spring.di.notification.Notifier;
 import com.studies.spring.di.notification.NotifierType;
-import com.studies.spring.di.service.ClienteActivedEvent;
+import com.studies.spring.di.service.ClientActivedEvent;
 
 
 @Component
@@ -18,7 +18,7 @@ public class NotificationService {
 	private Notifier notifier;
 	
 	@EventListener
-	public void clientActivedListener(ClienteActivedEvent event) {
+	public void clientActivedListener(ClientActivedEvent event) {
 		
 		notifier.notify(event.getClient(), "Seu cadastro no sistema está ativo!");
 	}
