@@ -12,7 +12,7 @@ import com.studies.spring.di.service.ActivationClientService;
 public class MyfirstController {
 	
 	@Autowired
-	private ActivationClientService ativactionClientService;
+	private ActivationClientService activationClientService;
 
 
 	@GetMapping("/hello")
@@ -20,7 +20,7 @@ public class MyfirstController {
 	public String hello() {
 		Client joao =  new Client("Joao", "joão@xyz.com", "34999998888");
 		
-		ativactionClientService.activate(joao);
+		activationClientService.activate(joao);
 		
 		return "Olá";
 	}
